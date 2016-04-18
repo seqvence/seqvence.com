@@ -1,46 +1,15 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Seqvence</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300italic|Lato:400,900' rel='stylesheet' type='text/css'>
-<link href="css/style.css" rel="stylesheet" type="text/css" />
-</head>
-
-<body>
-
-<!-- Top Section
-******************************************-->
-<section class="container-fluid l-top">
-	<h1><a href="#"><img src="images/logo.svg" alt="seqvence" class="logo"  /></a></h1>
-</section>
+{{ partial "header.html" }}
 
 <!-- Content Section
 ******************************************-->
 <section class="container-fluid l-intro">
 	<div class="container">
 		<h2>Tailored IT Solutions <em>from</em> <span class="highlight">Conception</span> <em>to</em> <span class="highlight">Completion</span></h2>
-		
+
 		<p>At Seqvence, we specialise in building IT systems that deliver a combination of reliability, security and ease of management.</p>
 		<p>In a fast paced environment where technologies are constantly changing, we commit to helping companies efficiently and sustainably manage their infrastructure, services and processes.</p>
 	</div>
 </section>
 
-<!-- Footer Section
-******************************************-->
-<section class="container-fluid text-center l-contact">
-	We’re hard at work building our new website. in the mean time, you can <a href="mailto:contact@seqvence.com">contact us here</a>.
-</section>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-75724919-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-</body>
-</html>
+{{ partial "footer.html" }}
