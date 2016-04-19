@@ -1,0 +1,14 @@
+{{ partial "header.html" . }}
+<body lang="en" itemscope itemtype="http://schema.org/Article">
+{{ $baseurl := .Site.BaseURL }}
+
+<section class="container-fluid">
+  <div class="container">
+        <h1 itemprop="name" id="title">{{ .Title }}</h1>
+        <article itemprop="articleBody" id="content">
+           {{ .Content }}
+        </article>
+  </div>
+</section>
+
+{{ partial "footer.html" . }}
