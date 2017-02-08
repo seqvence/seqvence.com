@@ -1,0 +1,370 @@
+/* ------------------------------------------------------------------------ */
+/*  HEADER STYLES
+/* ------------------------------------------------------------------------ */
+/*======== Top ========*/
+.top-main {
+	position: relative;
+	z-index: 1;
+	float: left;
+	/* overflow: hidden; */
+	padding-top: 70px;
+	padding-bottom: 70px;
+	width: 100%;
+}
+
+.logo {
+	position: absolute;
+	transform: translateY(-50%);
+}
+
+@media (max-width: 800px) {
+	.top-main {
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+	.logo {
+		position: relative;
+		transform: none;
+	}
+	.logo img {
+		height: 70px;
+	}
+}
+
+@media (max-width: 500px) {
+	.top-main {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+	.logo {
+		position: relative;
+		transform: none;
+	}
+	.logo img {
+		height: 50px;
+	}
+}
+
+/*======== Navigation Main ========*/
+.nav-main {
+    float: right;
+    transform: translateY(-50%);
+}
+
+.nav-main ul li {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 110%;
+}
+
+.nav-main a {
+    display: block;
+    padding: 0px 17px;
+    color: #E7E7E7;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.nav-main a:hover {
+	color: #208D9E;
+}
+
+.nav-main a.is-active {
+    color: #7C95A3;
+}
+
+.nav-main li.nav-social a {
+	padding: 0 8px;
+	
+}
+
+.nav-main li.nav-social a img {
+	max-height: 18px;
+}
+
+.nav-toggle {
+	position: absolute;
+	top: 16px;
+	right: 0px;
+	z-index: 50;
+	display: none;
+	width: 30px;
+	height: 30px;
+	border: none;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.nav-toggle span, 
+.nav-toggle span:before, 
+.nav-toggle span:after {
+	position: absolute;
+	top: 16px;
+	left: 0px;
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: #fff;
+	content: '';
+	cursor: pointer;
+}
+.nav-toggle span:before {
+	top: -6px;
+}
+.nav-toggle span:after { 
+	top: auto;
+	bottom: -6px;
+}
+
+.nav-toggle span, .nav-toggle span:before, .nav-toggle span:after {
+  transition: all 0.2s ease-in-out;
+}
+.nav-toggle.is-active span {
+  background-color: transparent;
+}
+.nav-toggle.is-active span:before, .nav-toggle.is-active span:after {
+  top: 0;
+}
+.nav-toggle.is-active span:before {
+  transform: rotate(45deg);
+}
+.nav-toggle.is-active span:after {
+  transform: rotate(-45deg);
+}
+
+
+@media (max-width: 900px) {
+	.nav-toggle {
+		position: absolute;
+		display: block;
+	}
+	.nav-main {
+		position: fixed; 
+		top: 0;
+		left: 0;
+		z-index: 1;
+		visibility: hidden;
+		padding: 20px;
+		padding-top: 60px;
+		width: 100%;
+		height: 100%;
+		background-color: #000;
+		text-align: center;
+		opacity: 0;
+		transition: opacity 0.5s, visibility 0s 0.5s;
+		transform: none;
+	}
+	
+	.nav-main.is-active {
+		visibility: visible;
+		opacity: 1;
+		transition: opacity 0.5s;
+	}
+	
+	.nav-main ul {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		z-index: 10;
+		display: block;
+		width: 100%;
+		transition: transform 0.5s;
+		transform: translateY(-70%);
+	}
+	
+	.nav-main.is-active ul {
+		opacity: 1;
+		transform: translateY(-50%);
+	}
+	
+	.nav-main ul li {
+		display: block;
+		float: none;
+		padding: 1.2em 0;
+		line-height: 100%;
+	}
+	
+	.nav-main li.nav-social {
+		display: inline-block;
+	}
+	
+	.nav-main a {
+		padding: 0;
+		font-size: 1.4em;
+	}
+}
+
+
+/* ------------------------------------------------------------------------ */
+/*  HEADER
+/* ------------------------------------------------------------------------ */
+.header-main {
+	position: relative;
+	overflow: hidden;
+	background-color: #0B2C45;
+}
+
+.home .header-main {
+	margin-bottom: 1px;
+}
+
+.static .header-main {
+	background: #0B2C45 url(../images/particles.png) no-repeat top;
+}
+
+.lines .header-main {
+	background: #0B2C45 url(../images/lines.svg) no-repeat bottom;
+	background-size: cover;
+}
+
+.header-text {
+	position: relative;
+	padding: 7% 0;
+}
+
+.inner .header-text {
+	overflow: hidden;
+	padding: 0;
+}
+
+#header-particles {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	pointer-events: none;
+}
+
+/* ------------------------------------------------------------------------ */
+/*  CONTENT SECTIONS
+/* ------------------------------------------------------------------------ */
+/*Posts*/
+.post-title {
+	display: block;
+	color: #fff;
+	font-size: 26px;
+	line-height: 140%;
+}
+
+.blog-container {
+	background:url(../images/blog-bk.png);
+	background-size: 198px;
+}
+
+.blog-container .p-intro {
+	color: #02233A;
+}
+
+.blog-content {
+	padding-right: 70px;
+	padding-left: 70px;
+}
+
+.img-box {
+	margin: 70px -70px 70px -70px;
+	text-align: center;
+}
+
+.img-box img {
+	max-width: 100%;
+	height: auto;
+}
+
+.blog-container h2 {
+	color: #02233A;
+}
+
+.blog-container h3 {
+	color: #02233A;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+}
+
+.blog-container p {
+	color: #4A5C63;
+}
+
+.nav-article-title {
+	display: block;
+	padding: 11px 22px;
+	color: #02233A;
+	font-size: 22px;
+}
+
+.post-meta {
+	display: block;
+	margin-top: 32px;
+	margin-bottom: -32px;
+	text-transform: uppercase;
+	letter-spacing: 0.15em;
+	font-weight: 700;
+	font-size: 14px;
+}
+
+@media (max-width: 900px) {
+	.img-box {
+		margin: 35px -20px;
+	}
+	.post-meta {
+		padding-right: 20px;
+		padding-bottom: 20px;
+		padding-left: 20px;
+		font-size: 14px;
+	}
+	
+	.header-main {
+		overflow: inherit;
+	}
+	
+}
+
+@media (max-width: 500px) {
+	.post-title {
+		font-size: 18px;
+	}
+	.nav-article-title {
+		display: none;
+	}
+	.inner .post-nav .col-sm-6 {
+		padding-bottom: 0;
+		width: 50%;
+	}
+	.blog-content {
+		padding-right: 0px;
+		padding-left: 0px;
+	}	
+}
+
+/* ------------------------------------------------------------------------ */
+/*  FOOTER STYLES
+/* ------------------------------------------------------------------------ */
+.footer-main {
+	color: #7C95A3;
+}
+
+.footer-main a {
+	padding-bottom: 1px;
+	border-bottom: 1px solid rgba(124, 149, 163, 0.25);
+	color: #7C95A3;
+}
+
+.footer-main ul {
+	display: inline-block;
+	margin-left: 16px;
+	vertical-align: text-top;
+}
+
+.footer-main ul a {
+	border-bottom: none;
+}
+
+.footer-main ul a img {
+	max-height: 16px;
+}
+
+.footer-main a:hover {
+	border-bottom-color: rgba(124, 149, 163, 1);
+	color: #fff;
+}
+

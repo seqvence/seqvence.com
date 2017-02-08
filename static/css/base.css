@@ -1,0 +1,101 @@
+/* ----------------------------------------
+ CSS MASTER FILE 
+---------------------------------------- */
+
+/*Custom Resets*/
+html, body {
+  position:relative;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  color: #7C95A3;
+  font-size: 17px;
+  font-family: 'PT Sans', Calibri, Helvetica, Arial, sans-serif;
+  line-height: 160%;
+}
+
+body {
+	background-color: #02233A;
+}
+
+a {
+    color: #208D9E;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+a:hover,
+a:focus {
+    color: #0BA4A8;
+    text-decoration: none;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+strong {
+    font-weight: 700;
+}
+
+h1 {
+    position: relative;
+    margin-top: 1em;
+    margin-bottom: 1em;
+	letter-spacing: 0;
+    font-weight: 400;
+    font-size: 56px;
+	line-height: 120%;
+}
+
+h2 {
+    position: relative;
+	margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+}
+
+h3 {
+    position: relative;
+	margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 140%;
+    color: #fff;
+}
+
+h4 {
+    position: relative;
+	margin-top: 1em;
+    margin-bottom: 1em;
+    font-weight: 400;
+    font-size: 42px;
+    line-height: 140%;
+}
+
+p {
+  margin: 1em 0;
+}
+
+@media (max-width: 500px) {
+	html, body {
+		font-size: 14px;
+	}
+	h1 {
+		font-size: 24px;
+	}
+	h2 {
+		font-size: 26px;
+	}
+	h3 {
+		font-size: 16px;
+	}
+}
+
+
+
+

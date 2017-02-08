@@ -4,15 +4,43 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Seqvence</title>
-<link href='https://fonts.googleapis.com/css?family=Merriweather:400,300italic|Lato:400,900' rel='stylesheet' type='text/css'>
-<link href="/css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<link href="/css/base.css" rel="stylesheet" type="text/css" />
+<link href="/css/layout.css" rel="stylesheet" type="text/css" />
+<link href="/css/modules.css" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="/js/scripts.js"></script>
 </head>
 
-<body>
+<body class="home">
+	<!--  Header Section
+	******************************************-->
+	<header class="header-main container-fluid" id="header-main">
+		<section class="top-main pad-box">
+			<div class="logo"><a href="index.html"><img src="/images/logo.svg" alt="seqvence"  /></a></div>
+			<button id="nav-toggle" class="btn nav-toggle"><span class="bar"></span></button>
+			<nav class="nav-main">
+				<ul class="no-list">
+					<li class="nav-social"><a href="https://twitter.com/SeqvenceBV"><img src="/images/i-tw.svg" alt="twitter"  /></a></li>
+					<li class="nav-social"><a href="https://www.linkedin.com/company/seqvence"><img src="/images/i-in.svg" alt="linkedin"  /></a></li>
+					<li class="nav-social"><a href="https://www.facebook.com/seqvencebv"><img src="/images/i-fb.svg" alt="facebook"  /></a></li>
+					<li class="nav-social"><a href="https://github.com/seqvence"><img src="/images/i-git.svg" alt="github"  /></a></li>
+					<li><a href="/index.html" class="is-active">home</a></li>
+					<li><a href="/about/">about</a></li>
+					<li><a href="/our-work.html">our work</a></li>
+					<li><a href="/blog.html">blog</a></li>
+					<li><a href="mailto:contact@seqvence.com">contact</a></li>
+				</ul>
 
-<!-- Top Section
-******************************************-->
-<section class="container-fluid l-top">
-	<a href="/"><img src="/images/logo.svg" alt="seqvence" class="logo"  /></a>
-</section>
+			</nav>
+		</section>
 
+		<section class="container-fluid">
+			<section class="container header-text text-center">
+				<h2 class="page-subtitle">Programmable infrastructure solutions</h2>
+				<h1 class="page-title has-line">Streamline your company’s operational and development work.</h1>
+			</section>
+		</section>
+
+		<div id="header-particles"></div>
+	</header>

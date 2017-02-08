@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="28px" viewBox="0 0 53 28" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-636.000000, -804.000000)">
+            <g id="Group-2" transform="translate(636.000000, 804.000000)">
+                <rect id="Rectangle-8" fill="#FFFFFF" x="0" y="12" width="53" height="16" rx="8"></rect>
+                <circle id="Oval-4" fill="#FFFFFF" cx="19.5" cy="13.5" r="13.5"></circle>
+                <ellipse id="Oval-4-Copy" fill="#FFFFFF" cx="36.5" cy="13.5" rx="9.5" ry="9.5"></ellipse>
+                <g id="Group-10" transform="translate(18.500000, 13.000000) rotate(30.000000) translate(-18.500000, -13.000000) translate(13.000000, 2.000000)" fill="#02233A">
+                    <polygon id="Rectangle-9" points="5.5 5.68434189e-14 5.5 11 9.23705556e-14 11"></polygon>
+                    <rect id="Rectangle-9-Copy" x="5.5" y="11" width="5.5" height="11"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

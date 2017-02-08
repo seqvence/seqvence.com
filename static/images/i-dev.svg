@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="53px" height="30px" viewBox="0 0 53 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41 (35326) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 9</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="home" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home" transform="translate(-916.000000, -802.000000)" fill="#FFFFFF">
+            <g id="Group-9" transform="translate(916.000000, 802.000000)">
+                <g id="Group-5" transform="translate(0.000000, 4.000000)">
+                    <path d="M39,4 L43.9988612,4 C45.1040596,4 46,4.8926228 46,5.99508929 L46,20.0049107 C46,21.1067681 45.1121541,22 43.9988612,22 L35.4878829,22 C34.2523737,24.3303847 30.9186565,26 27,26 C23.0813435,26 19.7476263,24.3303847 18.5121171,22 L9.00113884,22 C7.89594038,22 7,21.1073772 7,20.0049107 L7,5.99508929 C7,4.8932319 7.88784587,4 9.00113884,4 L15,4 L15,1.99201702 C15,0.891856397 15.8970262,0 17.0049466,0 L36.9950534,0 C38.1023548,0 39,0.900176167 39,1.99201702 L39,4 Z" id="Combined-Shape"></path>
+                    <rect id="Rectangle-2" x="0" y="1.33300781" width="5" height="23.6669922" rx="2"></rect>
+                    <rect id="Rectangle-2-Copy" x="48" y="1.33300781" width="5" height="23.6669922" rx="2"></rect>
+                </g>
+                <rect id="Rectangle-6" x="21" y="0" width="11" height="3" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
