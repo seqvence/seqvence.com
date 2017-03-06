@@ -42,7 +42,7 @@
 }
 
 .border-top {
-	/* margin-top: 1px; */
+	margin-top: 1px;
 	border-top: 1px solid #305468;
 }
 
@@ -180,7 +180,7 @@
 	transform: translateX(-50%);
 }
 
-.inner .has-line:after {
+.left-line:after {
 	left: 0;
 	transform: none;
 }
