@@ -42,7 +42,7 @@
 }
 
 .border-top {
-	margin-top: 1px;
+	/* margin-top: 1px; */
 	border-top: 1px solid #305468;
 }
 
@@ -126,17 +126,20 @@
 }
 
 /*======== Typography ========*/
-.page-title {
+.home-page-title {
 	margin: 17px auto 1em;
 	padding-bottom: 1em;
 	max-width: 900px;
 	color: #fff;
 }
 
-.inner .page-title {
+.page-title {
+	margin: 17px auto 1em;
+	padding-bottom: 1em;
+	max-width: 900px;
+	color: #fff;
 	margin-top: 1em;
 	margin-bottom: 0;
-	padding-bottom: 1em;
 	font-size: 46px;
 }
 
@@ -169,7 +172,7 @@
 	position: relative;
 }
 
-.has-line:after {
+.has-home-line:after {
 	position: absolute;
 	bottom: 0px;
 	left: 50%;
@@ -180,7 +183,13 @@
 	transform: translateX(-50%);
 }
 
-.left-line:after {
+.has-line:after {
+	position: absolute;
+	bottom: 0px;
+	width: 80px;
+	height: 3px;
+	background-color: #0BA4A8;
+	content: "";
 	left: 0;
 	transform: none;
 }
@@ -198,17 +207,19 @@
 }
 
 @media (max-width: 900px) {
-	.page-title {
+	.home-page-title {
 		padding-right: 20px;
 		padding-left: 20px;
 	}
 	.page-subtitle {
 		font-size: 14px;
 	}
-	.inner .has-line:after {
+	.has-line:after {
 		left: 20px;
 	}
-	.inner .page-title {
+	.page-title {
+		padding-right: 20px;
+		padding-left: 20px;
 		font-size: 36px;
 	}
 	
@@ -222,7 +233,7 @@
 		margin-bottom: 32px;
 		font-size: 14px;
 	}
-	.inner .page-title {
+	.page-title {
 		font-size: 26px;
 	}
 }

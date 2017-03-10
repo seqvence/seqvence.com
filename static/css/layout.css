@@ -206,6 +206,10 @@
 	background-color: #0B2C45;
 }
 
+.header-main {
+	margin-bottom: 1px;
+}
+
 .static .header-main {
 	background: #0B2C45 url(../images/particles.png) no-repeat top;
 }
@@ -215,12 +219,13 @@
 	background-size: cover;
 }
 
-.header-text {
+.home-header-text {
 	position: relative;
 	padding: 7% 0;
 }
 
-.inner .header-text {
+.header-text {
+	position: relative;
 	overflow: hidden;
 	padding: 0;
 }
@@ -322,7 +327,7 @@
 	.nav-article-title {
 		display: none;
 	}
-	.inner .post-nav .col-sm-6 {
+	.post-nav .col-sm-6 {
 		padding-bottom: 0;
 		width: 50%;
 	}
