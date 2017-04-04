@@ -206,10 +206,6 @@
 	background-color: #0B2C45;
 }
 
-.header-main {
-	margin-bottom: 1px;
-}
-
 .static .header-main {
 	background: #0B2C45 url(../images/particles.png) no-repeat top;
 }
@@ -221,7 +217,7 @@
 
 .home-header-text {
 	position: relative;
-	padding: 7% 0;
+	padding: 6% 0%;
 }
 
 .header-text {
