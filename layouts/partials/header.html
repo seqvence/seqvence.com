@@ -23,9 +23,9 @@
 				<ul class="no-list">
 					<li class="nav-social"><a href="https://www.linkedin.com/company/seqvence"><img src="/images/i-in.svg" alt="linkedin"  /></a></li>
 					<li class="nav-social"><a href="https://github.com/seqvence"><img src="/images/i-git.svg" alt="github"  /></a></li>
-					<li><a href="/">home</a></li>
-					<li><a href="/about/">about</a></li>
-					<li><a href="/post/">blog</a></li>
+					<li><a href="/" {{ if eq .Section nil }}class="is-active"{{ end }}>home</a></li>
+					<li><a href="/about/" {{ if eq .Section "about" }}class="is-active"{{ end }}>about</a></li>
+					<li><a href="/post/" {{ if eq .Section "post" }}class="is-active"{{ end }}>blog</a></li>
 					<li><a href="mailto:contact@seqvence.com">contact</a></li>
 				</ul>
 			</nav>
