@@ -2,8 +2,8 @@
 date = "2016-05-20T08:00:00+02:00"
 draft = false
 title = 'Good things come in small "containers": Ingredients for a successful birthday party'
-summary = "Yolo all day long"
 author = "Alex Giurgiu & Vali Stoican"
+categories = ["Docker"]
 +++
 
 For Docker’s 3rd birthday, the Docker team decided to organize a challenge to teach people Docker, and hopefully have some fun at the same time. It was a great event, with over 1180 people completing the assignment participating in 220 locations around the world.

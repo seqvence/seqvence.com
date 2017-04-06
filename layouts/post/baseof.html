@@ -5,7 +5,7 @@
 			<div class="breadcrumbs col-text">
 				<ul class="no-list list-inline">
 					<li><a href="/post/">Blog</a></li>
-					<li>Docker</li>
+					<li>{{ range .Params.categories }} {{ . }} {{ end }}</li>
 				</ul>			
 			</div>
 			<div class="col-text post-meta">Posted by {{ $.Param "author" }} on {{ .Date.Format "January 2, 2006" }} </div>

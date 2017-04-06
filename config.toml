@@ -4,3 +4,7 @@ title = "Seqvence"
 
 [params]
   author = "Alex Giurgiu"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
