@@ -10,11 +10,12 @@ For Docker’s 3rd birthday, the Docker team decided to organize a challenge to 
 
 <!--more-->
 
-Each participant went through a tutorial and then built a voting app. Within that app, an HTTP API responded with information about the participant. Once a participant built the Docker images, they pushed them to [Docker Hub](https://hub.docker.com/), and submitted an entry to the [dockerize.it](https://dockerize.it/) website. This was done with an HTTP POST containing the user’s Docker images and information. This in turn triggered a series of events behind the [dockerize.it](https://dockerize.it/) website that lead to the running and testing of the user images, and the marking of the entry as failed or successful. Soon as a submission was marked successful a pin was displayed on the map. Pins were aggregated according to the zoom level.
+In this article, we will describe the way we leveraged Docker tools to create a platform capable of handling thousands of requests and testing more than 10,000 containers. 
 
 ![image alt text](/images/posts/image_0.png)
 
-In this article, we will describe the way we leveraged Docker tools to create a platform capable of handling thousands of requests and testing more than 10,000 containers. 
+Each participant went through a tutorial and then built a voting app. Within that app, an HTTP API responded with information about the participant. Once a participant built the Docker images, they pushed them to [Docker Hub](https://hub.docker.com/), and submitted an entry to the [dockerize.it](https://dockerize.it/) website. This was done with an HTTP POST containing the user’s Docker images and information. This in turn triggered a series of events behind the [dockerize.it](https://dockerize.it/) website that lead to the running and testing of the user images, and the marking of the entry as failed or successful. Soon as a submission was marked successful a pin was displayed on the map. Pins were aggregated according to the zoom level.
+
 
 ## Requirements
 
