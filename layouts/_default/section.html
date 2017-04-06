@@ -1,18 +1,5 @@
 {{ partial "header.html" . }}
 
-<section class="container-fluid">
-  <div class="container">
-   <h1 id="title">{{ .Title }}</h1>
-            {{ range .Data.Pages.GroupByDate "2006" }}
-            <h2>{{ .Key }}</h2>
-                <ul id="list">
-                    {{ range .Pages }}
-                        {{ .Render "li"}}
-                    {{ end }}
-                </ul>
-            {{ end }}
-  </div>
-</section>
+Default section layout.
 
-<aside id="meta"> </aside>
 {{ partial "footer.html" . }}

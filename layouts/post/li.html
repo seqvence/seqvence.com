@@ -1,0 +1,5 @@
+    <div class="pad-sm row post-box">
+				<span class="post-date">{{ .Date.Format "January 2, 2006" }}</span>
+				<a href="{{ .Permalink }}" class="post-title">{{ .Title }} {{ if .GetParam "draft"}}DRAFT{{end}}</a>
+				<p>{{ .Summary }}</p>
+		</div>
