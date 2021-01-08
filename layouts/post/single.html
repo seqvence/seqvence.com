@@ -1,5 +1,35 @@
-{{ define "main" }}
+{{ partial "header.html" . }}
 
-{{ .Content }}
+	<section class="container-fluid">
+		<section class="container header-text">
+			<div class="breadcrumbs col-text">
+				<ul class="no-list list-inline">
+					<li><a href="/post/">Blog</a></li>
+					<li>{{ range .Params.categories }} {{ . }} {{ end }}</li>
+				</ul>
+			</div>
+			<div class="col-text post-meta">Posted by {{ $.Param "author" }} on {{ .Date.Format "January 2, 2006" }} </div>
+			<h1 class="page-title has-line">{{ .Title }}</h1>
+		</section>
+	</section>
 
-{{ end }}
+	<div id="header-particles"></div>
+
+	</header>
+
+<!-- Content Section
+******************************************-->
+<section class="container-fluid blog-container">
+	<div class="container col-text">
+		<div class="row pad-md blog-content">
+			<ul class="no-list list-inline list-tags">
+				<li><a href="#" class="post-tag post-x"></a></li>
+			</ul>
+
+            {{ .Content }}
+
+		</div>
+	</div>
+</section>
+
+{{ partial "footer.html" . }}
