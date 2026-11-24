@@ -1,0 +1,11 @@
+{{ define "main" }}
+<article class="reading">
+  <header>
+    <p class="eyebrow"><a href="{{ "post/" | relURL }}">Journal</a>{{ range .GetTerms "categories" }}<span class="sep">/</span><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>{{ end }}</p>
+    <h1>{{ .Title }}</h1>
+    <p class="byline">{{ .Params.author }} · <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 January 2006" }}</time></p>
+  </header>
+  <div class="prose">{{ .Content }}</div>
+  <a class="text-link" href="{{ "post/" | relURL }}">Back to journal</a>
+</article>
+{{ end }}

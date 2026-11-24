@@ -1,0 +1,3 @@
+- name: MCP Cloud
+  url: https://mcp-cloud.ai/
+  description: A platform for deploying Model Context Protocol (MCP) servers.

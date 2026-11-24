@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="wrap page-intro"><p class="eyebrow accented">Seqvence</p><h1>{{ .Title }}</h1>
+  {{ with .Description }}<p class="lede">{{ . }}</p>{{ end }}
+</div>
+<div class="wrap listing">
+  {{ range .Pages.ByDate.Reverse }}
+    {{ if .IsPage }}{{ partial "post-card.html" (dict "post" . "level" 2) }}{{ else }}<h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>{{ end }}
+  {{ else }}<p>No entries yet.</p><a class="text-link" href="{{ "post/" | relURL }}">Browse the journal</a>{{ end }}
+</div>
+{{ end }}

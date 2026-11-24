@@ -1,0 +1,13 @@
+services:
+  website:
+    image: ghcr.io/gohugoio/hugo:v0.170.1
+    command:
+      - server
+      - --bind=0.0.0.0
+      - --baseURL=http://localhost
+      - --renderToMemory
+      - --noBuildLock
+    ports:
+      - "127.0.0.1:1313:1313"
+    volumes:
+      - .:/project:ro

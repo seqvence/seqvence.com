@@ -1,0 +1,19 @@
+{{ define "main" }}
+<div class="wrap page-intro"><p class="eyebrow accented">About Seqvence</p><h1>The team</h1><div class="lede">{{ .Content }}</div></div>
+<section class="wrap people" aria-label="The founders">
+  {{ range hugo.Data.team }}
+  <article>
+    <img class="portrait" src="{{ printf "images/%s" .photo | relURL }}" alt="{{ .name }}" width="358" height="308">
+    <h2>{{ .name }}</h2><p>{{ .bio }}</p>
+    <div class="profile-links">
+      <a class="social-link" href="https://www.linkedin.com/in/{{ .linkedin }}/" aria-label="{{ .linkedin }} on LinkedIn">
+        <img src="{{ "images/i-in.svg" | relURL }}" alt="" width="22" height="20">
+      </a>
+      <a class="social-link" href="https://x.com/{{ .x }}" aria-label="@{{ .x }} on X">
+        <img src="{{ "images/i-x.svg" | relURL }}" alt="" width="20" height="20">
+      </a>
+    </div>
+  </article>
+  {{ end }}
+</section>
+{{ end }}
