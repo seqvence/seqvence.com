@@ -89,7 +89,8 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
 .site-footer { border-top: 1px solid var(--line); }
 .footer-inner { padding-block: 2.5rem; display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
 .footer-inner p { margin-top: .9rem; color: var(--muted); font-size: .88rem; }
-.site-footer nav { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+.site-footer nav { display: flex; align-items: center; gap: .25rem; flex-wrap: wrap; }
+.site-footer nav a[href^="mailto:"] { margin-inline-end: .75rem; }
 .page-intro { padding-block: clamp(3.5rem, 7vw, 6.5rem) clamp(2.5rem, 5vw, 4.5rem); }
 .page-intro h1, .reading h1 { margin-block: 1rem 1.5rem; }
 .page-intro .lede { max-width: 49rem; }
@@ -105,9 +106,8 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
 .portrait { width: min(100%, 22.375rem); height: auto; }
 .people h2 { margin: 1.5rem 0 .75rem; }
 .profile-links { flex-wrap: wrap; gap: .25rem; margin-top: 1rem; }
-.profile-links .social-link { width: 2.75rem; height: 2.75rem; justify-content: center; border-radius: .25rem; }
-.profile-links .social-link:hover { background: var(--mist); }
-.social-link { display: inline-flex; align-items: center; gap: .45rem; }
+.social-link { display: inline-flex; align-items: center; justify-content: center; width: 2.75rem; height: 2.75rem; border-radius: .25rem; }
+.social-link:hover { background: var(--mist); }
 .listing h2 { margin-bottom: 1rem; }
 .reading { width: min(47rem, calc(100% - 2.5rem)); margin-inline: auto; padding-block: clamp(3rem, 7vw, 6rem); }
 .reading h1 { font-size: clamp(2.75rem, 5vw, 4.6rem); line-height: 1.05; }
