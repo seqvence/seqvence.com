@@ -140,10 +140,12 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
   .footer-inner { flex-direction: column; align-items: flex-start; }
   .service-detail { gap: 1rem; }
 }
-@media (max-width: 32rem) {
+@media (max-width: 38rem) {
   .nav-wrap { padding-block: .85rem .7rem; gap: .8rem; flex-wrap: wrap; }
-  .site-header nav { width: 100%; justify-content: space-between; gap: .5rem; }
+  .site-header nav { width: 100%; justify-content: space-between; gap: .5rem; flex-wrap: wrap; }
   .site-header nav a { min-height: 2.45rem; display: inline-flex; align-items: center; }
+}
+@media (max-width: 32rem) {
   .services-grid { grid-template-columns: 1fr; }
   .service-card, .service-card:first-child { padding: 1.4rem 0; border-right: 0; }
   .service-card + .service-card { border-top: 1px solid var(--line); }

@@ -5,7 +5,7 @@
   <article>
     <img class="portrait" src="{{ printf "images/%s" .photo | relURL }}" alt="{{ .name }}" width="358" height="308">
     <h2>{{ .name }}</h2><p>{{ .bio }}</p>
-    <div class="profile-links"><a href="{{ .linkedin }}">LinkedIn</a><a href="{{ .twitter }}">Twitter</a></div>
+    <div class="profile-links"><a href="{{ .linkedin }}">LinkedIn</a><a href="{{ .x }}" aria-label="{{ .name }} on X">X</a></div>
   </article>
   {{ end }}
 </section>
