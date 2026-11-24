@@ -5,7 +5,14 @@
   <article>
     <img class="portrait" src="{{ printf "images/%s" .photo | relURL }}" alt="{{ .name }}" width="358" height="308">
     <h2>{{ .name }}</h2><p>{{ .bio }}</p>
-    <div class="profile-links"><a href="{{ .linkedin }}">LinkedIn</a><a href="{{ .x }}" aria-label="{{ .name }} on X">X</a></div>
+    <div class="profile-links">
+      <a class="social-link" href="https://www.linkedin.com/in/{{ .linkedin }}/" aria-label="{{ .linkedin }} on LinkedIn">
+        <img src="{{ "images/i-in.svg" | relURL }}" alt="" width="18" height="17">{{ .linkedin }}
+      </a>
+      <a class="social-link" href="https://x.com/{{ .x }}" aria-label="@{{ .x }} on X">
+        <img src="{{ "images/i-x.svg" | relURL }}" alt="" width="16" height="16">@{{ .x }}
+      </a>
+    </div>
   </article>
   {{ end }}
 </section>

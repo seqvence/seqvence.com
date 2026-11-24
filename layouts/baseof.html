@@ -32,7 +32,9 @@
       <nav aria-label="Contact and social links">
         <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
         <a href="https://github.com/seqvence">GitHub</a>
-        <a href="https://www.linkedin.com/company/seqvence">LinkedIn</a>
+        <a class="social-link" href="https://www.linkedin.com/company/seqvence" aria-label="Seqvence on LinkedIn">
+          <img src="{{ "images/i-in.svg" | relURL }}" alt="" width="18" height="17">LinkedIn
+        </a>
       </nav>
     </div>
   </footer>

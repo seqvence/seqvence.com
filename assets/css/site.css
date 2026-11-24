@@ -104,7 +104,8 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
 .people article { border-top: 1px solid var(--line); padding-top: 1.5rem; }
 .portrait { width: min(100%, 22.375rem); height: auto; }
 .people h2 { margin: 1.5rem 0 .75rem; }
-.profile-links { gap: 1.2rem; margin-top: 1rem; }
+.profile-links { flex-wrap: wrap; gap: .5rem 1.2rem; margin-top: 1rem; }
+.social-link { display: inline-flex; align-items: center; gap: .45rem; }
 .listing h2 { margin-bottom: 1rem; }
 .reading { width: min(47rem, calc(100% - 2.5rem)); margin-inline: auto; padding-block: clamp(3rem, 7vw, 6rem); }
 .reading h1 { font-size: clamp(2.75rem, 5vw, 4.6rem); line-height: 1.05; }
