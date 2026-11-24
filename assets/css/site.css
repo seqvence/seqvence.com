@@ -77,6 +77,10 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
 .service-card:hover h3, .post-card .post-title a:hover { text-decoration: underline; }
 .service-icon { width: 3.25rem; height: 3.25rem; display: grid; place-items: center; background: var(--deep); border-radius: .25rem; }
 .service-icon img { width: 72%; height: 64%; object-fit: contain; }
+.products { padding-bottom: clamp(3rem, 5.6vw, 5.7rem); }
+.product-list { list-style: none; padding: 0; border-top: 1px solid var(--line); }
+.product-list li { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: .75rem 2rem; border-bottom: 1px solid var(--line); padding-block: 1.5rem; }
+.product-list p { margin-top: .4rem; color: var(--muted); }
 .journal-feature { background: var(--mist); border-block: 1px solid var(--line); }
 .post-card { display: grid; grid-template-columns: minmax(11rem, .68fr) 1.65fr; gap: clamp(1.5rem, 4vw, 4rem); align-items: center; max-width: 68rem; }
 .post-card:not(:has(.post-cover)) { display: block; }

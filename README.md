@@ -22,6 +22,8 @@ hugo server
 
 Open the local URL printed by Hugo. Edit articles and page introductions in `content/`, service descriptions and profiles in `data/`, templates in `layouts/` and styles in `assets/css/`.
 
+To list another product on the homepage, add its name, URL and description to [the product list](data/products.yaml).
+
 ## Production
 
 ```sh
