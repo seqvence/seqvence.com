@@ -4,7 +4,17 @@ This repository builds the complete static site for [seqvence.com](https://seqve
 
 ## Local development
 
-Install [Hugo 0.170.1](https://github.com/gohugoio/hugo/releases/tag/v0.170.1). The standard edition is sufficient.
+From this repository, start the preview with Docker Compose:
+
+```sh
+docker compose up -d
+```
+
+Open [localhost:1313](http://localhost:1313/). Hugo watches the checkout and reloads the browser when you save changes. Use `docker compose logs -f` to see build messages and `docker compose down` to stop the preview.
+
+If a deleted page still opens at its old URL, run `docker compose restart website` to clear the in-memory preview.
+
+Alternatively, install [Hugo 0.170.1](https://github.com/gohugoio/hugo/releases/tag/v0.170.1) and run the server directly:
 
 ```sh
 hugo server
