@@ -1,0 +1,24 @@
+- id: cloud-architecture
+  title: Cloud architecture
+  icon: i-cloud.svg
+  summary: Design and automate the infrastructure your applications run on.
+  detail: We help teams define their cloud environments in code, run container platforms and automate the work of keeping them online.
+  work: [Infrastructure consulting, Managed Rancher clusters, Operations automation]
+- id: infrastructure-software
+  title: Infrastructure software
+  icon: i-software.svg
+  summary: Build tools that connect your systems and simplify day-to-day operations.
+  detail: We develop the software around your infrastructure, from APIs that connect services to workers that take repetitive tasks off an operator’s hands.
+  work: [Software development, Systems integration, Automation tooling]
+- id: delivery-pipelines
+  title: Delivery pipelines
+  icon: i-dev.svg
+  summary: Give every change a repeatable path from development to production.
+  detail: We design and manage continuous integration and delivery pipelines, with testing built into the release process.
+  work: [Managed CI/CD pipelines, Testing methodology, Release automation]
+- id: devops-coaching
+  title: DevOps coaching
+  icon: i-config.svg
+  summary: Help development and operations teams work together on delivery.
+  detail: We work alongside your team through agile coaching and practical training in the tools and practices behind DevOps.
+  work: [Agile coaching, Technical training, DevOps transformation]

@@ -1,0 +1,5 @@
+- {name: Docker, image: l-docker.png}
+- {name: Solvinity, image: l-sol.png}
+- {name: Proximus, image: l-pro.png}
+- {name: KPN, image: l-kpn.png}
+- {name: Implicit-Explicit, image: l-ex.png}

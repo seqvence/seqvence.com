@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="{{ site.Language.Locale }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ if not .IsHome }}{{ .Title }} · {{ end }}Seqvence{{ if .IsHome }} · Infrastructure engineering{{ end }}</title>
+  <meta name="description" content="{{ .Description | default (.Summary | plainify | truncate 155) | default site.Params.description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <link rel="icon" href="{{ "favicon.ico" | relURL }}">
+  {{ with .OutputFormats.Get "rss" }}<link rel="alternate" type="{{ .MediaType.Type }}" title="{{ site.Title }} RSS" href="{{ .RelPermalink }}">{{ end }}
+  {{ $css := resources.Get "css/site.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav-wrap">
+      {{ partial "brand.html" . }}
+      <nav aria-label="Main navigation">
+        {{ range slice (dict "url" "/services/" "name" "Services") (dict "url" "/about/" "name" "About") (dict "url" "/post/" "name" "Journal") }}
+          <a href="{{ .url | relURL }}" {{ if eq $.RelPermalink .url }}aria-current="page"{{ else if hasPrefix $.RelPermalink .url }}aria-current="location"{{ end }}>{{ .name }}</a>
+        {{ end }}
+        <a class="button button-compact" href="mailto:{{ site.Params.email }}">Contact us</a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">{{ block "main" . }}{{ end }}</main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <div>{{ partial "brand.html" . }}<p>© {{ now.Year }} Seqvence</p></div>
+      <nav aria-label="Contact and social links">
+        <a href="mailto:{{ site.Params.email }}">{{ site.Params.email }}</a>
+        <a href="https://github.com/seqvence">GitHub</a>
+        <a href="https://www.linkedin.com/company/seqvence">LinkedIn</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

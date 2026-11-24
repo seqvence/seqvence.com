@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="wrap page-intro"><p class="eyebrow accented">Capabilities</p><h1>Engineering services</h1><div class="lede">{{ .Content }}</div></div>
+<div id="we-offer-the-following-services" class="wrap service-list">
+  {{ range hugo.Data.services }}
+  <section id="{{ .id }}" class="service-detail">
+    <div><span class="service-icon"><img src="{{ printf "images/%s" .icon | relURL }}" alt=""></span><h2>{{ .title }}</h2></div>
+    <div><p>{{ .detail }}</p><ul>{{ range .work }}<li>{{ . }}</li>{{ end }}</ul></div>
+  </section>
+  {{ end }}
+  <a class="button" href="mailto:{{ site.Params.email }}">Discuss a project</a>
+</div>
+{{ end }}

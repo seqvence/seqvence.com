@@ -1,0 +1,11 @@
+{{ $level := .level }}
+{{ with .post }}
+<article class="post-card">
+  {{ with .Params.cover }}<div class="post-cover"><img src="{{ . | relURL }}" alt="" loading="lazy"></div>{{ end }}
+  <div>
+    <p class="eyebrow">{{ delimit .Params.categories " / " }} <span class="sep">/</span> <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2 Jan 2006" }}</time></p>
+    {{ if eq $level 2 }}<h2 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>{{ else }}<h3 class="post-title"><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>{{ end }}
+    <p>{{ .Description | default (.Summary | plainify) }}</p>
+  </div>
+</article>
+{{ end }}

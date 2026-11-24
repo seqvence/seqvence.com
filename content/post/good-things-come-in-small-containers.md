@@ -1,6 +1,8 @@
 +++
 date = "2016-05-20T08:00:00+02:00"
 draft = false
+cover = "images/posts/image_0.png"
+description = "How we built the platform for Docker’s third birthday and tested more than 10,000 containers."
 title = 'Good things come in small "containers": Ingredients for a successful birthday party'
 author = "Alex Giurgiu & Vali Stoican"
 categories = ["Docker"]
@@ -12,7 +14,7 @@ For Docker’s 3rd birthday, the Docker team decided to organize a challenge to 
 
 In this article, we will describe the way we leveraged Docker tools to create a platform capable of handling thousands of requests and testing more than 10,000 containers. 
 
-![image alt text](/images/posts/image_0.png)
+![Map of worldwide Docker birthday submissions](/images/posts/image_0.png)
 
 Each participant went through a tutorial and then built a voting app. Within that app, an HTTP API responded with information about the participant. Once a participant built the Docker images, they pushed them to [Docker Hub](https://hub.docker.com/), and submitted an entry to the [dockerize.it](https://dockerize.it/) website. This was done with an HTTP POST containing the user’s Docker images and information. This in turn triggered a series of events behind the [dockerize.it](https://dockerize.it/) website that lead to the running and testing of the user images, and the marking of the entry as failed or successful. Soon as a submission was marked successful a pin was displayed on the map. Pins were aggregated according to the zoom level.
 
@@ -43,9 +45,9 @@ The API received a request from the user and ran sanity checks on the submitted 
 
 In the second phase of the process, the Worker took an unchecked user submission from the database, downloaded the user created Docker images, ran them and validated that they complied with the competition rules by probing port 80 and checking the result they return. The Worker also updated the status of the submission along the way so that users could check the status of their submission through the API.  The Worker was written in Python and ran in multi-threading picking submissions periodically from the database and interacting with the **Docker** API to run and test the user containers. Waiting times for checking new submissions was computed dynamically based on the number of submitted images between two consecutive checks.
 
-As you can see, the actual verification of the submission was done asynchronously in the background. While the **API** had strict availability requirements, the **W****orker** was more tolerant of failure and could be more flexible about when it processed the user submissions.
+As you can see, the actual verification of the submission was done asynchronously in the background. While the **API** had strict availability requirements, the **Worker** was more tolerant of failure and could be more flexible about when it processed the user submissions.
 
-![image alt text](/images/posts/image_1.png)
+![Flow from the competition API through the worker to Docker Swarm agents](/images/posts/image_1.png)
 
 ## Building for resiliency and workload flexibility
 
@@ -55,7 +57,7 @@ Even though we kept the application as simple as possible, satisfying the requir
 
 The most important goal in splitting these 2 groups of machines was to isolate user submitted containers from the main application that processes user submissions. Since users controlled the content of the containers that they submitted, running them on a separate set of machines reduced the risk of having the whole application compromised or DOS-ed by a user with ill intentions. Another important difference was the availability requirements for the 2 groups of machines. The application could tolerate running without having any Swarm agent nodes but it could only tolerate partial failure in the group of machines that ran the application itself.
 
-![image alt text](/images/posts/image_2.png)
+![Architecture separating the management machines from the container cluster](/images/posts/image_2.png)
 
 ### Workload flexibility
 

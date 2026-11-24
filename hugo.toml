@@ -1,0 +1,12 @@
+baseURL = "https://seqvence.com/"
+title = "Seqvence"
+locale = "en-US"
+enableRobotsTXT = true
+
+[params]
+  description = "Seqvence helps teams design programmable infrastructure, automate cloud operations and improve software delivery."
+  email = "contact@seqvence.com"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
