@@ -104,7 +104,9 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
 .people article { border-top: 1px solid var(--line); padding-top: 1.5rem; }
 .portrait { width: min(100%, 22.375rem); height: auto; }
 .people h2 { margin: 1.5rem 0 .75rem; }
-.profile-links { flex-wrap: wrap; gap: .5rem 1.2rem; margin-top: 1rem; }
+.profile-links { flex-wrap: wrap; gap: .25rem; margin-top: 1rem; }
+.profile-links .social-link { width: 2.75rem; height: 2.75rem; justify-content: center; border-radius: .25rem; }
+.profile-links .social-link:hover { background: var(--mist); }
 .social-link { display: inline-flex; align-items: center; gap: .45rem; }
 .listing h2 { margin-bottom: 1rem; }
 .reading { width: min(47rem, calc(100% - 2.5rem)); margin-inline: auto; padding-block: clamp(3rem, 7vw, 6rem); }
@@ -115,7 +117,7 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
 .prose h2 { font-size: 2.1rem; margin-top: 2.5rem; }
 .prose h3 { font-size: 1.5rem; margin-top: 2rem; }
 .prose li { margin-bottom: .5rem; }
-.prose a, .profile-links a { color: var(--teal); }
+.prose a { color: var(--teal); }
 .prose img { height: auto; margin: 2rem auto; border: 1px solid var(--line); }
 
 @media (max-width: 56rem) {
