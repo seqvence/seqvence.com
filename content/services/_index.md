@@ -1,6 +1,6 @@
 +++
 title = "Services"
-description = "Infrastructure consulting, software development, managed platforms and training."
+description = "Cloud infrastructure, software delivery, AI-assisted development, AI adoption and governance, and cybersecurity engineering."
 +++
 
-We work with development and operations teams on the systems, tools and practices behind software delivery.
+We help engineering teams run cloud infrastructure, secure the path to production and decide where AI can improve their work.

@@ -68,10 +68,8 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
 .section { padding-block: clamp(3rem, 5.6vw, 5.7rem); }
 .section-heading { justify-content: space-between; gap: 1.5rem; margin-bottom: 2rem; }
 .section-heading .text-link { flex: none; }
-.services-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); border-block: 1px solid var(--line); }
-.service-card { display: block; text-decoration: none; padding: 1.8rem clamp(1rem, 2vw, 2rem) 2rem; border-right: 1px solid var(--line); }
-.service-card:first-child { padding-left: 0; }
-.service-card:last-child { border-right: 0; }
+.services-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: clamp(1rem, 2.5vw, 2.5rem); }
+.service-card { display: block; text-decoration: none; padding-block: 1.8rem 2rem; border-top: 1px solid var(--line); }
 .service-card h3 { margin-block: 1.3rem .65rem; }
 .service-card p, .post-card p:not(.eyebrow), .people p { color: var(--muted); }
 .service-card:hover h3, .post-card .post-title a:hover { text-decoration: underline; }
@@ -128,9 +126,6 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
   .client-row { grid-template-columns: 1fr; gap: 1.25rem; }
   .client-row ul { justify-content: space-around; }
   .services-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .service-card:nth-child(2) { border-right: 0; }
-  .service-card:nth-child(n+3) { border-top: 1px solid var(--line); }
-  .service-card:nth-child(3) { padding-left: 0; }
 }
 @media (max-width: 45rem) {
   .nav-wrap { min-height: 4.25rem; }
@@ -154,8 +149,7 @@ h3 { font-size: 1.4rem; font-weight: 600; letter-spacing: -.042em; }
 }
 @media (max-width: 32rem) {
   .services-grid { grid-template-columns: 1fr; }
-  .service-card, .service-card:first-child { padding: 1.4rem 0; border-right: 0; }
-  .service-card + .service-card { border-top: 1px solid var(--line); }
+  .service-card { padding-block: 1.4rem; }
   .section-heading { align-items: baseline; gap: .8rem; }
   .section-heading h2 { font-size: 2rem; }
   .section-heading .text-link { font-size: .9rem; }

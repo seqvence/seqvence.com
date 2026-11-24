@@ -22,3 +22,21 @@
   summary: Help development and operations teams work together on delivery.
   detail: We work alongside your team through agile coaching and practical training in the tools and practices behind DevOps.
   work: [Agile coaching, Technical training, DevOps transformation]
+- id: ai-assisted-development
+  title: AI-assisted development
+  icon: i-ai-development.svg
+  summary: Put coding assistants to work on everyday tasks, from drafting changes to writing regression tests.
+  detail: We start with a task your developers already do and try it on a real change in your repository. Together we define what context the assistant needs, which tests its output must pass and what a reviewer should check before merging.
+  work: [Repository instructions for coding assistants, AI-assisted test writing, Code review criteria]
+- id: ai-adoption-and-governance
+  title: AI adoption and governance
+  icon: i-ai-governance.svg
+  summary: Choose where to pilot AI and set clear rules for data use, approvals and oversight.
+  detail: We help teams weigh potential uses against the effort and risk involved. For the first pilot, we agree on an owner, which data the tool may access and how to decide whether it is worth rolling out more widely.
+  work: [Use case assessment, Pilot design and evaluation, Internal AI use policies]
+- id: cybersecurity-engineering
+  title: Cybersecurity engineering
+  icon: i-security.svg
+  summary: Find and fix gaps in how people and software gain access to production.
+  detail: We trace a release from source control through the build pipeline into your cloud environment. We review permissions and secrets along the way, prioritize fixes with your team and add checks that flag the same problems in future releases.
+  work: [Cloud access reviews, Secrets management, Build and release security]
